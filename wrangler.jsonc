@@ -4,7 +4,7 @@
  */
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "take-home",
+  "name": "cf_ai_group_scheduler",
   "main": ".svelte-kit/cloudflare/_worker.js",
   "compatibility_date": "2025-10-11",
   "compatibility_flags": [
