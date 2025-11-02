@@ -11,6 +11,8 @@ This application demonstrates a complete AI-powered collaborative scheduling sol
 - **User Input**: Chat and Voice (Web Speech API with speech-to-text and text-to-speech)
 - **Memory/State**: Session-based Durable Objects for multi-user coordination and conversation history
 
+**📝 Development Documentation**: See [USER_PROMPTS.md](./USER_PROMPTS.md) for all AI prompts used during development and [PROMPTS.md](./PROMPTS.md) for runtime AI system prompts and architectural decisions.
+
 ## Features
 
 ### Core Functionality
@@ -183,7 +185,8 @@ cf_ai_group_scheduler/
 ├── wrangler.jsonc                    # Cloudflare Workers config
 ├── package.json
 ├── README.md                         # This file
-└── PROMPTS.md                        # AI prompts documentation
+├── PROMPTS.md                        # AI prompts documentation (runtime)
+└── USER_PROMPTS.md                   # Development prompts used to build this app
 ```
 
 ## Architecture

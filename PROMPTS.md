@@ -1,10 +1,13 @@
 # AI Prompts Documentation
 
-This document describes all AI prompts used in the cf_ai_group_scheduler application.
+This document describes all AI prompts used in the cf_ai_group_scheduler application, including both **runtime system prompts** (prompts the app uses) and **development prompts** (prompts used to build the app).
+
+**📝 For User Development Prompts**: See [USER_PROMPTS.md](./USER_PROMPTS.md) for the complete list of prompts I used with Claude Code to build this application.
 
 ## Table of Contents
-1. [Runtime System Prompts](#runtime-system-prompts)
-2. [Prompt Engineering Decisions](#prompt-engineering-decisions)
+1. [User Development Prompts](./USER_PROMPTS.md) - **Required Reading: How This App Was Built**
+2. [Runtime System Prompts](#runtime-system-prompts) - Prompts the app uses
+3. [Prompt Engineering Decisions](#prompt-engineering-decisions) - Design choices
 
 ---
 
