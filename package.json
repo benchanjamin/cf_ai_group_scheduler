@@ -5,8 +5,9 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "npm run build && wrangler dev",
+		"dev:wrangler": "npm run build && wrangler pages dev .svelte-kit/cloudflare",
+		"build": "vite build && node scripts/fix-worker-exports.js",
+		"preview": "npm run build && wrangler pages dev .svelte-kit/cloudflare",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -14,6 +15,7 @@
 		"cf-typegen": "wrangler types ./src/worker-configuration.d.ts"
 	},
 	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20251014.0",
 		"@sveltejs/adapter-auto": "^6.1.0",
 		"@sveltejs/adapter-cloudflare": "^7.2.4",
 		"@sveltejs/kit": "^2.43.2",

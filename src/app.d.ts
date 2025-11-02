@@ -3,9 +3,12 @@
 declare global {
 	namespace App {
         interface Platform {
-            env: Env
-            cf: CfProperties
-            ctx: ExecutionContext
+            env: {
+                AI: Ai;
+                SESSIONS: DurableObjectNamespace;
+            };
+            cf: CfProperties;
+            ctx: ExecutionContext;
         }
     }
 }

@@ -9,7 +9,14 @@
       "Bash(source ~/.nvm/nvm.sh)",
       "Bash(nvm alias:*)",
       "Bash(echo:*)",
-      "Read(//Users/benchanjamin/**)"
+      "Read(//Users/benchanjamin/**)",
+      "Bash(rm:*)",
+      "Bash(npm install:*)",
+      "Bash(cat:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npx wrangler pages dev:*)",
+      "Bash(pkill:*)",
+      "Bash(npm run dev:wrangler:*)"
     ],
     "deny": [],
     "ask": []
